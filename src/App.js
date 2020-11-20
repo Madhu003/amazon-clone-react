@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import logo from './images/amazon-logo.png';
 import cartImage from './images/130-1303615_shopping-cart-icons-amazon-shopping-cart-icon.png'
+import primeAddImage from "./images/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg"
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     let [scrolledpx, setScrollpx] = useState(0);
+    let [isMouseOnAccounts, setIsMouseOnAccounts] = useState(false);
+    let [isMouseOnPrime, setIsOnPrime] = useState(false);
+
 
     useEffect(() => {
         document.addEventListener("scroll", _ => setScrollpx(window.scrollY));
@@ -35,7 +39,11 @@ function App() {
                         </button>
                     </div>
                 </div>
-                <div className="hello-sign" style={{ width: "193px", position: "relative" }}>
+                <div className="hello-sign"
+                    style={{ width: "193px", position: "relative" }}
+                    // onMouseOver={e => console.log(e)}
+                    onMouseOver={() => setIsMouseOnAccounts(true)}
+                    onMouseOut={() => setIsMouseOnAccounts(false)}>
                     Hello, Sign In
                     <br></br>
                     <b>
@@ -52,8 +60,9 @@ function App() {
                         top: "62px",
                         right: "-155px",
                         color: "black",
-                        border: "1px solid black",
-                        borderRadius: "4px"
+                        border: "1px solid #bbb",
+                        borderRadius: "4px",
+                        display: isMouseOnAccounts ? "block" : "none",
                     }}>
                         <div style={{
                             display: "flex",
@@ -82,7 +91,7 @@ function App() {
                                 <div>Discover Your Style</div>
                                 <div> Explore Showroom</div>
                             </div>
-                            <div  className="your-account" style={{ width: "100%", paddingLeft: "20px" }}>
+                            <div className="your-account" style={{ width: "100%", paddingLeft: "20px" }}>
                                 <h6><b>Your Account</b></h6>
                                 <div>Your Orders</div>
                                 <div>Your Wish List</div>
@@ -103,7 +112,10 @@ function App() {
                     <br></br>
                     <b>& Orders</b>
                 </div>
-                <div style={{ width: "94px" }}>
+                <div style={{ width: "94px", position: "relative" }}
+                    onMouseOver={() => setIsOnPrime(true)}
+                    onMouseOut={() => setIsOnPrime(false)}
+                >
                     Try
                     <br></br>
                     <b>
@@ -114,6 +126,18 @@ function App() {
                             </svg>
                         </div>
                     </b>
+                    <div className="hello-sign-drop-down" style={{
+                        position: "absolute",
+                        top: "62px",
+                        right: "15px",
+                        color: "black",
+                        border: "1px solid #bbb",
+                        display: isMouseOnPrime ? "block" : "none",
+                        borderRadius: "4px",
+                        padding: 10
+                    }}>
+                        <img src={primeAddImage} style={{ width: 300, height: 300 }} />
+                    </div>
                 </div>
                 <div style={{
                     width: "86px",
