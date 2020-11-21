@@ -69,3 +69,7 @@
   .menu-item:hover {
     border-color: #ffffff;
   }
+
+  header{
+    z-index: 1;
+  }

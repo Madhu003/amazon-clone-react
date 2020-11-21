@@ -168,7 +168,7 @@ const Header = () => {
             width: "100%",
             height: 40,
             background: "#232f3e",
-            display: "flex",
+            display: scrolledpx > 65 ? "none" : "flex",
             color: "white",
             justifyContent: "space-between",
             padding: "3px"
