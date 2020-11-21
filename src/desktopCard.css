@@ -1,0 +1,47 @@
+.desktop-card {
+    width: 310px;
+    height: 400px;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.images-grid {
+    grid-gap: 10px;
+}
+
+.desktop-card .image {
+    margin: 5px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-card .image > img {
+    width: 125px;
+    height: 115px;
+}
+
+.desktop-card .see-more {
+    position: absolute;
+    font-size: 13px;
+    margin-left: 10px;
+    bottom: 10px;
+    color: #007185;
+    cursor: pointer;
+}
+
+.desktop-card .see-more:hover {
+    text-decoration: underline;
+}
+
+.desktop-card .heading{
+    font-weight: bold !important ;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-left: 10px;
+}

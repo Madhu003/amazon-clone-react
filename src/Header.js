@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import NodeGeocoder from 'node-geocoder';
 
 import logo from './images/amazon-logo.png';
 import cartImage from './images/130-1303615_shopping-cart-icons-amazon-shopping-cart-icon.png'
@@ -15,6 +16,22 @@ const Header = () => {
 
     useEffect(() => {
         document.addEventListener("scroll", _ => setScrollpx(window.scrollY));
+
+        const NodeGeocoder = require('node-geocoder');
+
+        const options = {
+            provider: 'google',
+
+            // Optional depending on the providers
+            // fetch: customFetchImplementation,
+            apiKey: 'YOUR_API_KEY', // for Mapquest, OpenCage, Google Premier
+            formatter: null // 'gpx', 'string', ...
+        };
+
+        const geocoder = NodeGeocoder(options);
+        geocoder.reverse({ lat: 45.767, lon: 4.833 })
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
     }, []);
 
     return <header style={{
