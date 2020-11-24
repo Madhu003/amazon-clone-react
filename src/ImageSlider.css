@@ -1,0 +1,17 @@
+.slider {
+    background: #b5c3c561;
+    position: relative;
+    height: 720px;
+}
+
+.slider > .desktop-card-grid {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.slider button{
+    top: 30%;
+}
