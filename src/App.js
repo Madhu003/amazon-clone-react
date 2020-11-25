@@ -21,7 +21,10 @@ function App() {
                     <Footer />
                 </Route>
                 <Route path="/login">
-                    <Login />
+                    <Login pageType="login" />
+                </Route>
+                <Route path="/signin">
+                    <Login pageType="signin" />
                 </Route>
             </Switch>
         </Router>

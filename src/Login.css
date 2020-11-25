@@ -38,7 +38,7 @@
 .loginbox {
     border: 1px solid #dddddd;
     border-radius: 4px;
-    width: 300px;
+    width: 345px;
     padding: 20px 26px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .signin_button {
-    width: 300px;
+    width: 345px;
     border: 1px solid #adb1b8;
     font-family: "Amazon Ember",Arial,sans-serif;
     /* color: #adb1b8; */
