@@ -7,7 +7,7 @@ import primeAddImage from "./images/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400
 import locationImage from "./images/location-icon.png";
 import gameImage from "./images/gaming-swm._CB430661085_.jpg";
 
-import "./header.css";
+import "./Header.css";
 
 const Header = () => {
     let [scrolledpx, setScrollpx] = useState(0);
@@ -58,7 +58,7 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <div className="hello-sign"
+                <div className="hello-sign header__menu-item"
                     style={{ width: "193px", position: "relative" }}
                     // onMouseOver={e => console.log(e)}
                     onMouseOver={() => setIsMouseOnAccounts(true)}
@@ -76,14 +76,16 @@ const Header = () => {
                     <div className="hello-sign-drop-down" style={{
                         width: "470px",
                         position: "absolute",
-                        top: "62px",
+                        top: "43px",
                         right: "-155px",
                         color: "black",
                         border: "1px solid #bbb",
                         borderRadius: "4px",
                         display: isMouseOnAccounts ? "block" : "none",
                         background: "#ffffff"
-                    }}>
+                    }} 
+                    onMouseOver={() => setIsMouseOnAccounts(true)}
+                    onMouseOut={() => setIsMouseOnAccounts(false)}>
                         <div style={{
                             display: "flex",
                             flexDirection: "column",
@@ -127,17 +129,17 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ width: "98px" }}>
+                <div className="header__menu-item" style={{ width: "98px" }}>
                     Returns
-            <br></br>
+                    <br></br>
                     <b>& Orders</b>
                 </div>
-                <div style={{ width: "94px", position: "relative" }}
+                <div className="header__menu-item" style={{ width: "94px", position: "relative" }}
                     onMouseOver={() => setIsOnPrime(true)}
                     onMouseOut={() => setIsOnPrime(false)}
                 >
                     Try
-            <br></br>
+            <       br></br>
                     <b>
                         Prime&nbsp;
                 <div style={{ display: "inline" }}>
@@ -148,15 +150,17 @@ const Header = () => {
                     </b>
                     <div className="hello-sign-drop-down" style={{
                         position: "absolute",
-                        top: "62px",
-                        right: "15px",
+                        top: "43px",
+                        right: "-30px",
                         color: "black",
                         border: "1px solid #bbb",
                         display: isMouseOnPrime ? "block" : "none",
                         borderRadius: "4px",
                         padding: 10,
                         background: "#ffffff"
-                    }}>
+                    }} 
+                    onMouseOver={() => setIsOnPrime(true)}
+                    onMouseOut={() => setIsOnPrime(false)}>
                         <img src={primeAddImage} style={{ width: 300, height: 300 }} />
                     </div>
                 </div>

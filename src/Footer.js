@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import amazonLogo from "./images/amazon-logo.png"
-import "./footer.css";
+import "./Footer.css";
 
 const Footer = () => {
     return <div className="footer">

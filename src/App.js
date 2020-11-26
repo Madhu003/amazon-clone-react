@@ -6,6 +6,7 @@ import {
 import Header from "./Header";
 import Footer from "./Footer";
 import ImageSlider from "./ImageSlider";
+import DesktopCard from "./DesktopCard";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,16 @@ function App() {
                 <Route path="/" exact>
                     <Header />
                     <ImageSlider />
+                    <div style={{
+                        display: "flex",
+                        justifyContent: "space-around",
+                        width: "100%"
+                    }}>
+                        <DesktopCard />
+                        <DesktopCard />
+                        <DesktopCard />
+                        <DesktopCard />
+                    </div>
                     <Footer />
                 </Route>
                 <Route path="/login">

@@ -20,9 +20,10 @@ const ImageSlider = () => {
     function setSliderButtonsPotion() {
         let buttons = Array.from(document.querySelectorAll(".slider button"));
         buttons.forEach(item => {
-            item.style.top = "30%";
+            item.style.top = "25%";
         });
     }
+    
     useEffect(() => {
         setSliderButtonsPotion();
     }, []);

@@ -1,13 +1,13 @@
 .slider {
     background: #b5c3c561;
     position: relative;
-    height: 720px;
+    height: 670px;
 }
 
 .slider > .desktop-card-grid {
     display: flex;
     position: absolute;
-    top: 300px;
+    top: 250px;
     justify-content: space-around;
     width: 100%;
 }
