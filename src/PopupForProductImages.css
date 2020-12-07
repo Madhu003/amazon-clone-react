@@ -1,0 +1,59 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#6c757d, #0000006b);
+}
+
+.modal-dialog {
+    /* max-width: 95% !important; */
+}
+
+.popup_for_product_images .close {
+    font-weight: lighter;
+}
+
+.popup_for_product_images .close:focus {
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgba(228, 121, 17, .5);
+}
+
+.popup_for_product_images .modal-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.popup_for_product_images .modal-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup_for_product_images__image_preview {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.popup_for_product_images__image_preview img {
+    max-width: 700px;
+    max-height: 300px;
+    cursor: url(https://images-na.ssl-images-amazon.com/images/G/01/detail-page/cursors/zoom-in._CB485944643_.bmp), pointer;
+}
+
+.popup_for_product_images__image_list {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.popup_for_product_images__image_list img {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #e4791100;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.popup_for_product_images .modal-header{
+    background-color: #F0F2F2;
+}
