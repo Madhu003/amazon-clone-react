@@ -1,0 +1,57 @@
+[
+    {
+        "id": "28689abf-f038-469d-9074-88cc7e305dad",
+        "name": "Cary Grant: A Brilliant Disguise",
+        "author": "Scott Eyman",
+        "price": 2327,
+        "images": [
+            "https://images-na.ssl-images-amazon.com/images/I/41gCnGti5+L._SX334_BO1,204,203,200_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/8100CgfUf7L.jpg"
+        ],
+        "productDetails": {
+            "Item Weight": "857 g",
+            "Dimensions": "15.88 x 4.57 x 23.5 cm",
+            "Publisher": "Simon & Schuster (20 October 2020)",
+            "Language": "English",
+            "Rating": 4.5
+        },
+        "description": {
+            "main": "Film historian and acclaimed New York Times bestselling biographer Scott Eyman has written the definitive, “captivating” (Associated Press) biography of Hollywood legend Cary Grant, one of the most accomplished—and beloved—actors of his generation, who remains as popular as ever today.",
+            "more": "Born Archibald Leach in 1904, he came to America as a teenaged acrobat to find fame and fortune, but he was always haunted by his past. His father was a feckless alcoholic, and his mother was committed to an asylum when Archie was eleven years old. He believed her to be dead until he was informed she was alive when he was thirty-one years old. Because of this experience Grant would have difficulty forming close attachments throughout his life. He married five times and had numerous affairs.\n\nDespite a remarkable degree of success, Grant remained deeply conflicted about his past, his present, his basic identity, and even the public that worshipped him in movies such as Gunga Din, Notorious, and North by Northwest.\n\nDrawing on Grant’s own papers, extensive archival research, and interviews with family and friends, this is the definitive portrait of a movie immortal."
+        }
+    },
+    {
+        "id": "df7549ff-2937-4e2a-8b70-05e760b93155",
+        "name": "The Magic of Thinking Big ",
+        "author":"David J. Schwartz ",
+        "price": 399,
+        "images":[
+            "https://images-na.ssl-images-amazon.com/images/I/51xb85HS7QL._SX324_BO1,204,203,200_.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/81mgd257w8L.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/31Cw4XsegnL.jpg"            
+        ],
+        "productDetails": {
+            "Rating": 4.5
+        },
+        "description":{
+            "main": "Millions of readers have acquired the secrets of success through The Magic of Thinking Big. Achieve everything you always wanted: financial security, power and influence, the ideal job, satisfying relationships, and a rewarding, happy life.",
+            "more":"Set your goals high...then exceed them!\n\nMillions of people throughout the world have improved their lives using The Magic of Thinking Big. Dr. David J. Schwartz, long regarded as one of the foremost experts on motivation, will help you sell better, manage better, earn more money, and—most important of all—find greater happiness and peace of mind.\n\nThe Magic of Thinking Big gives you useful methods, not empty promises. Dr. Schwartz presents a carefully designed program for getting the most out of your job, your marriage and family life, and your community. He proves that you don’t need to be an intellectual or have innate talent to attain great success and satisfaction—but you do need to learn and understand the habit of thinking and behaving in ways that will get you there. This book gives you those secrets!\n\nBelieve you can succeed and you will:\n\n-Cure yourself of the fear of failure\n-Think and dream creatively\n-You are what you think you are\n-Make your attitudes your allies\n-Learn how to think positively\n-Turn defeat into victory\n-Use goals to help you grow\n-Think like a leader"
+        }
+    },
+    {
+        "id": "8a71f13c-0b51-4e75-96ea-152429ccccb3",
+        "name": "THE MAGIC OF FAITH (PB)",
+        "author":"Joseph Murphy (Author)",
+        "images":[
+            "https://images-na.ssl-images-amazon.com/images/I/71gDAtTYlCL.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/71OrAH1sz6L.jpg",
+            "https://images-na.ssl-images-amazon.com/images/I/918gGOaXnvL.jpg"
+        ],
+        "description":{
+            "main": "Here is the law: “I am that which I feel myself to be.” Practice changing the feeling of “I” every day by affirming: “I am spirit; I think, see, feel, and live as spirit, the presence of God.” (The other self in you thinks, feels, and acts as the race mind does.) as you continue to do this, you will begin to feel you are one with God. As the sun in the heavens redeems the Earth from darkness and gloom, so will the realisation of the presence of God in you reveal the man you always wished to bathe joyous, radiant, peaceful, prosperous, and successful man whose intellect is illumined by the light from above."
+        },
+        "productDetails": {
+            "Rating": 4.5
+        }
+    }
+]

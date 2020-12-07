@@ -28,10 +28,10 @@ const Header = () => {
             formatter: null // 'gpx', 'string', ...
         };
 
-        const geocoder = NodeGeocoder(options);
-        geocoder.reverse({ lat: 45.767, lon: 4.833 })
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        // const geocoder = NodeGeocoder(options);
+        // geocoder.reverse({ lat: 45.767, lon: 4.833 })
+        //     .then(res => console.log(res))
+        //     .catch(err => console.log(err));
     }, []);
 
     return <>

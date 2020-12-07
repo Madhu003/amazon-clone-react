@@ -3,10 +3,7 @@ import {
     BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
 
-import Header from "./Header";
-import Footer from "./Footer";
-import ImageSlider from "./ImageSlider";
-import DesktopCard from "./DesktopCard";
+import Home from "./Home";
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,27 +13,15 @@ function App() {
     return <div className="App">
         <Router >
             <Switch>
-                <Route path="/" exact>
-                    <Header />
-                    <ImageSlider />
-                    <div style={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                        width: "100%"
-                    }}>
-                        <DesktopCard />
-                        <DesktopCard />
-                        <DesktopCard />
-                        <DesktopCard />
-                    </div>
-                    <Footer />
-                </Route>
-                <Route path="/login">
+                <Route path="/auth/login" exact>
                     <Login pageType="login" />
                 </Route>
-                <Route path="/signin">
+                <Route path="/auth/signin" exact>
                     <Login pageType="signin" />
                 </Route>
+                <Route path="/" component={Home}/>
+                <Route path="/home" component={Home}/>
+
             </Switch>
         </Router>
     </div>;
