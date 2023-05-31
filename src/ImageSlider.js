@@ -14,7 +14,11 @@ const ImageSlider = () => {
         { url: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Pantry/November2020/hero/HSBCset1_1500x600_GW._CB415623222_.jpg" },
         { url: "https://images-eu.ssl-images-amazon.com/images/G/31/img20/Watches/GW/BTF/Nov/GW_PC_BUNK-1500-x-600._CB415678352_.jpg" },
         { url: "https://images-eu.ssl-images-amazon.com/images/G/31/prime/Pay/Nov/Rewards-for-Prime_1500x600_V2._CB416907378_.jpg" },
-        { url: "https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2020/img/Kitchen/XCM_Manual_1287794_1483639_IN_in_sa_la_wintercarnival_in_en_3546749_1500x600_1X_en_IN._CB415355060_.jpg" }
+        { url: "https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2020/img/Kitchen/XCM_Manual_1287794_1483639_IN_in_sa_la_wintercarnival_in_en_3546749_1500x600_1X_en_IN._CB415355060_.jpg" },
+        { url: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/Holiday/GiftGuide/Fuji_TallHero_GG2_en_US_1x._CB418256337_.jpg" },
+        { url: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Beauty_v2_en_US_1x._CB429089975_.jpg" },
+        { url: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/HolidayDeals/Desktop/Fuji_TallHero_HolidayDeals_en_US_1x._CB414278668_.jpg" },
+        { url: "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Computers_1x._CB432469755_.jpg" }
     ];
 
     function setSliderButtonsPotion() {
@@ -23,7 +27,7 @@ const ImageSlider = () => {
             item.style.top = "25%";
         });
     }
-    
+
     useEffect(() => {
         setSliderButtonsPotion();
     }, []);

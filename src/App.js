@@ -5,8 +5,9 @@ import {
 
 import Home from "./Home";
 
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 import Login from './Login';
 
 function App() {

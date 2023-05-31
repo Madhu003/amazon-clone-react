@@ -9,19 +9,9 @@ export default function PopupForProductImages({ images }) {
     let [seletedIndex, setSeletedIndex] = useState(0);
 
     useEffect(() => {
-        // modelRef.current.addEventListener("click", event => {
-        //     console.log(event);
-        //     modelRef.current.style.display = "none";
-        // });
-
-        // contentRef.current.addEventListener("click", event => {
-        //     event.stopPropagation();
-        // });
-
-
-        return () => {
-        }
-    }, []);
+        
+        
+    }, [seletedIndex]);
 
     return <div className="modal popup_for_product_images" ref={modelRef} role="dialog">
         <div className="modal-dialog" role="document" style={{

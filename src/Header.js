@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import NodeGeocoder from 'node-geocoder';
-
+import {useHistory} from 'react-router-dom';
 import logo from './images/amazon-logo.png';
 import cartImage from './images/130-1303615_shopping-cart-icons-amazon-shopping-cart-icon.png'
 import primeAddImage from "./images/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB442254244_.jpg"
@@ -10,6 +10,7 @@ import gameImage from "./images/gaming-swm._CB430661085_.jpg";
 import "./Header.css";
 
 const Header = () => {
+    let history = useHistory();
     let [scrolledpx, setScrollpx] = useState(0);
     let [isMouseOnAccounts, setIsMouseOnAccounts] = useState(false);
     let [isMouseOnPrime, setIsOnPrime] = useState(false);
@@ -41,7 +42,8 @@ const Header = () => {
             width: "99vW"
         }} >
             <div className="app-header">
-                <div style={{ display: "flex", alignItems: "end" }}>
+                <div style={{ display: "flex", alignItems: "end", cursor: "pointer" }}
+                onClick={() => history.push("/home")}>
                     <img src={logo} style={{
                         height: "28px"
                     }} />
